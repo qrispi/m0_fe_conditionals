@@ -59,21 +59,21 @@ console.log("Is numberStudents less than or equal to 21?", numberStudents <= 21)
 // Make sure YOU can explain it that way!
 
 console.log(4 < 9);
-// YOU DO: Explain.
+// This line is checking if 4 is less than 9. It should log true in the console.
 
 var books = 3;
 console.log(4 < books);
-// YOU DO: Explain.
+// This line is checking if variable 'books' is greater than 4. Since 'books' has been assigned as 3, it should log false in the console.
 
 var friends = 6;
 var siblings = 2;
 console.log(friends > siblings);
-// YOU DO: Explain.
+// This line is checking if variable 'friends' is greater than variable 'siblings'. Since 'friends' is assigned as 6 and 'siblings' is assigned as 2, and 6 > 2, it should log true in the console.
 
 var attendees = 9;
 var meals = 8;
 console.log(attendees !== meals);
-// YOU DO: Explain.
+// This line is checking if variable 'attendees' does not equal variable 'meals'. Since 'attendees is assigned as 9 and 'meals' is assigned as 8 and 9 != 8, it should log true in the console.
 
 
 // #-------------------
