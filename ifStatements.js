@@ -28,6 +28,21 @@ if (weather === "sunny") {
 // Experiment with manipulating the value held in variable 'weather'
 // to print something other than 'coat'
 
+var weather = "hurricane"
+
+if (weather === "sunny") {
+  console.log("sunscreen");
+} else if (weather === "rainy") {
+  console.log("umbrella");
+} else if (weather === "snowy") {
+  console.log("coat");
+} else if (weather === "icy") {
+  console.log("yak traks");
+} else {
+  console.log("good to go!");
+}
+
+// I love how it says 'good to go!' if there's a hurricane!
 
 // ##################
 // Using the numQuarters variable defined below, determine
@@ -44,9 +59,15 @@ if (weather === "sunny") {
 
 var numQuarters = 0
 
-console.log("I have enough money for a gumball");
-console.log("I don't have enough money for a gumball");
-
+if (numQuarters >= 100) {
+  console.log("You're rich! Where'd you get all those quarters???")
+} else if (numQuarters >= 4) {
+  console.log("You have enough quarters to buy us both a gumball")
+} else if (numQuarters >=2) {
+  console.log("I have enough money for a gumball")
+} else {
+  console.log("I don't have enough money for a gumball")
+}
 
 // #####################
 // Using the variables defined below, write code that will tell you
@@ -64,4 +85,10 @@ console.log("I don't have enough money for a gumball");
 
 var cupsOfFlour = 1;
 var hasSauce = true;
+
+if (cupsOfFlour >= 2 && hasSauce) {
+  console.log("I can make pizza!")
+} else {
+  console.log("I cannot make pizza!")
+}
 
