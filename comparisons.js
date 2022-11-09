@@ -96,15 +96,53 @@ var age = 1;
 
 // YOU DO:
 // Determine if the dog loves to play and loves treats
+console.log("Does the dog love to play and love treats?")
+if (lovesToPlay && lovesTreats) {
+    console.log("Of course it does, it's a dog!")
+} else {
+    console.log("It doesn't, are you sure it's a dog?")
+}
 
 
 // Determine if the dog loves to play and loves the dog park
-
+console.log("Does the dog love to play and love the dog park?")
+if (lovesToPlay && lovesDogPark) {
+    console.log("Of course it does, it's a dog!")
+} else {
+    console.log("It doesn't, it's a little shy.")
+}
 
 // Determine if the dog loves to play or loves the dog park
-
+console.log("Does the dog love to play or love the dog park?")
+if (lovesToPlay || lovesDogPark) {
+    console.log("It definitely loves at least one of those things!")
+} else {
+    console.log("It doesn't, are you sure it's a dog?")
+}
+// Alternatively the question could be read as, 'which activity does the dog like?'. Code for that scenario would like this:
+console.log("Does the dog love to play or love the dog park?")
+if (lovesToPlay && lovesDogPark) {
+    console.log("It loves both of those things!")
+} else if (lovesToPlay) {
+    console.log("It loves to play!")
+} else if (lovesDogPark) {
+    console.log("It loves the dog park!")
+} else {
+    console.log("It doesn't, are you sure it's a dog?")
+}
 
 // Determine if the dog loves to play and is a puppy
+// We are going to assume that any dog who is at least 1 is not a puppy although I disagree with what google says regarding this matter!
+console.log("Does the dog love to play and is it a puppy?")
+if (lovesToPlay && age < 1) {
+    console.log("It loves to play and is a puppy!")
+} else if (lovesToPlay && age <= 1) {
+    console.log("It loves to play but it's not a puppy!")
+} else if (lovesToPlay = false && age < 1) {
+    console.log("It's a puppy but it doesn't love to play")
+} else {
+    console.log("It's not a puppy and it doesn't love to play; are you sure it's a dog?")
+}
 
 // What did your final line of code evaluate to? Why do you think that is? Explain.
-// ANSWER:
+// ANSWER: The console logged 'It loves to play but it's not a puppy!'. This happened because lovesToPlay is true but age was not less than 1.
